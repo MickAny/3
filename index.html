@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Задание 1
+        function cubing(variable) {
+            return variable ** 3;
+        }
+        //console.log(cubing(2) + cubing(3));
+
+        //Задание 2
+        function salaryAfterTaxes() {
+
+            let salary = Number(prompt("Enter the salary"));
+            let taxes = Number(salary * 0.13);
+            salary -= taxes;
+            console.log(`The salary after taxes deductions equals ${salary}`);
+        }
+        //salaryAfterTaxes();
+
+        //Задание 3
+        function findMaxValue(){
+            let num1 = Number(prompt("Enter the first value"));
+            let num2 = Number(prompt("Enter the second value"));
+            let num3 = Number(prompt("Enter the third value"));
+
+            let maxValue = num1;
+            if(maxValue < num2) maxValue = num2;
+            if(maxValue < num3) maxValue = num3;
+
+            console.log(`The greatest value is ${maxValue}`);
+        }
+        //findMaxValue();
+
+        //Задание 4
+        function sum(value1 = 0, value2 = 0){
+            return value1 + value2;
+        }
+        //console.log(sum(2, 6));
+
+        function subt(value1 = 0, value2 = 0){
+           if(value2 > value1){
+            return value2 - value1;
+           }else{
+            return value1 - value2;
+           }
+        }
+        //console.log(subt(18, 10));
+
+        function mult(value1 = 0, value2 = 0){
+            return value1 * value2;
+        }
+        //console.log(mult(8, 10));
+
+        function div(value1 = 0, value2 = 0){
+            return value1 / value2;
+        }
+        //console.log(div(5, 4));
+
+    </script>
+
+</body>
+</html>
